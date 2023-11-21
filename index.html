@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Luana Eza</title>
+    <link rel="stylesheet" href="https://use.typekit.net/pxt8psq.css" />
+  </head>
+  <style>
+    body {
+      background-image: url(https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif);
+      overflow: hidden;
+    }
+
+    .cake {
+      width: 400px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: 50px;
+      z-index: 1;
+    }
+
+    .table {
+      width: 800px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: -180px;
+    }
+
+    .fire {
+      width: 60px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 250px;
+      margin: auto;
+      z-index: 2;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .neon-text {
+      animation: flicker 6s linear infinite;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 450px;
+      z-index: 3;
+    }
+
+    .button-tiup {
+      padding: 10px;
+      text-align: center;
+      background-color: orangered;
+      color: white;
+      font-weight: bold;
+      width: 120px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 20px;
+      margin: auto;
+      z-index: 4;
+      border-radius: 10px;
+    }
+
+    @keyframes flicker {
+      0% {
+        /*3*/
+        opacity: 25%;
+        color: transparent;
+        text-shadow: 0 0 0.3vw #ff5200, 0 0 0.521vw #ff5200;
+      }
+      3.3% {
+        /*3*/
+        opacity: 25%;
+        color: transparent;
+        text-shadow: 0 0 0.3vw #ff5200, 0 0 0.521vw #ff5200;
+      }
+      3.67% {
+        /*2*/
+        color: white;
+        text-shadow: 0 0 0.3vw #fff, 0 0 0.521vw #fff, 0 0 1.094vw #fff,
+          0 0 2.188vw #ff5200, 0 0 4.271vw #ff5200, 0 0 4.792vw #ff5200,
+          0 0 5.313vw #ff5200, 0 0 7.865vw #ff5200;
+      }
+      10% {
+        /*1*/
+        opacity: 75%;
+        color: white;
+        text-shadow: 0 0 1vw #ff5200, 0 0 2vw #ff5200, 0 0 2.5vw #ff5200,
+          0 0 3vw #ff5200, 0 0 4vw #ff5200;
+      }
+      36.7% {
+        /*1*/
+        opacity: 75%;
+        color: white;
+        text-shadow: 0 0 1vw #ff5200, 0 0 2vw #ff5200, 0 0 2.5vw #ff5200,
+          0 0 3vw #ff5200, 0 0 4vw #ff5200;
+      }
+      37.3% {
+        /*3*/
+        opacity: 25%;
+        color: transparent;
+        text-shadow: 0 0 0.3vw #ff5200, 0 0 0.521vw #ff5200;
+      }
+      38% {
+        /*1*/
+        opacity: 75%;
+        color: white;
+        text-shadow: 0 0 1vw #ff5200, 0 0 2vw #ff5200, 0 0 2.5vw #ff5200,
+          0 0 3vw #ff5200, 0 0 4vw #ff5200;
+      }
+      40.67% {
+        /*3*/
+        opacity: 25%;
+        color: transparent;
+        text-shadow: 0 0 0.3vw #ff5200, 0 0 0.521vw #ff5200;
+      }
+      41.33% {
+        /*1*/
+        opacity: 75%;
+        color: white;
+        text-shadow: 0 0 1vw #ff5200, 0 0 2vw #ff5200, 0 0 2.5vw #ff5200,
+          0 0 3vw #ff5200, 0 0 4vw #ff5200;
+      }
+      60% {
+        /*2*/
+        color: white;
+        text-shadow: 0 0 0.3vw #fff, 0 0 0.521vw #fff, 0 0 1.094vw #fff,
+          0 0 2.188vw #ff5200, 0 0 4.271vw #ff5200, 0 0 4.792vw #ff5200,
+          0 0 5.313vw #ff5200, 0 0 7.865vw #ff5200;
+      }
+      80% {
+        /*1*/
+        opacity: 75%;
+        color: white;
+        text-shadow: 0 0 1vw #ff5200, 0 0 2vw #ff5200, 0 0 2.5vw #ff5200,
+          0 0 3vw #ff5200, 0 0 4vw #ff5200;
+      }
+      93.3% {
+        /*2*/
+        color: white;
+        text-shadow: 0 0 0.3vw #fff, 0 0 0.521vw #fff, 0 0 1.094vw #fff,
+          0 0 2.188vw #ff5200, 0 0 4.271vw #ff5200, 0 0 4.792vw #ff5200,
+          0 0 5.313vw #ff5200, 0 0 7.865vw #ff5200;
+      }
+      93.5% {
+        /*1*/
+        opacity: 75%;
+        color: white;
+        text-shadow: 0 0 1vw #ff5200, 0 0 2vw #ff5200, 0 0 2.5vw #ff5200,
+          0 0 3vw #ff5200, 0 0 4vw #ff5200;
+      }
+      98% {
+        /*3*/
+        opacity: 25%;
+        color: transparent;
+        text-shadow: 0 0 0.3vw #ff5200, 0 0 0.521vw #ff5200;
+      }
+      100% {
+        /*1*/
+        opacity: 75%;
+        color: white;
+        text-shadow: 0 0 1vw #ff5200, 0 0 2vw #ff5200, 0 0 2.5vw #ff5200,
+          0 0 3vw #ff5200, 0 0 4vw #ff5200;
+      }
+    }
+  </style>
+  <body>
+    <h1 class="neon-text"><b>HAPPY</b> BIRHTDAY<i> EZA</i></h1>
+    <img id="fire-img" class="fire" src="assets/fire.gif" alt="fire" />
+    <img class="cake" src="assets/cake-removebg-preview.png" alt="cake" />
+    <img class="table" src="assets/table.png" alt="table" />
+    <button class="button-tiup" onclick="handleTiup()">Tiup Lilin</button>
+
+    <script>
+      function handleTiup() {
+        var button = document.querySelector(".button-tiup");
+
+        if (button.textContent === "Tiup Lilin") {
+          button.textContent = "Nyala Lilin";
+        } else {
+          button.textContent = "Tiup Lilin";
+        }
+
+        var element = document.getElementById("fire-img");
+        var currentOpacity = window
+          .getComputedStyle(element)
+          .getPropertyValue("opacity");
+        element.style.opacity = currentOpacity === "0" ? "1" : "0";
+      }
+    </script>
+  </body>
+</html>
